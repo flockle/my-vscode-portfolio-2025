@@ -1,0 +1,416 @@
+/* Base Styles */
+body {
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  color: #1B4332;
+  background-color: #F0FDF4;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #2D6A4F;
+}
+
+.nav-link {
+  color: #1B4332;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #2D6A4F;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(to right, #F0FDF4, #ffffff);
+  padding: 80px 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.hero-section h1 {
+  color: #2D6A4F;
+  margin-bottom: 15px;
+}
+
+.hero-section p {
+  color: #1B4332;
+  max-width: 720px;
+  margin: auto;
+}
+
+.social-icons a {
+  color: #2D6A4F;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.social-icons a:hover {
+  transform: translateY(-4px);
+  color: #40916C;
+}
+
+/* Button Styling */
+.btn-primary {
+  background-color: #2D6A4F;
+  border-color: #2D6A4F;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #40916C;
+  transform: scale(1.05);
+}
+
+.btn-outline-primary {
+  border-color: #2D6A4F;
+  color: #2D6A4F;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background-color: #2D6A4F;
+  color: #fff;
+}
+
+/* About Preview */
+.about-preview {
+  background-color: #ffffff;
+  padding: 60px 20px;
+  animation: fadeIn 1.5s ease-in-out;
+}
+
+/* Footer */
+footer {
+  background-color: #E9F5EC;
+  font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* About Section */
+.fade-in-section {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease-out;
+}
+
+.fade-in-active {
+  opacity: 1;
+  transform: translateY(0);
+  animation: fadeIn 1s ease forwards;
+}
+
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+
+
+/* =======================
+   Projects Section Styles
+   ======================= */
+
+.projects-section {
+  background-color: #F0FDF4;
+  padding: 80px 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.projects-section h2 {
+  color: #2D6A4F;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* Project Cards */
+.projects-section .card {
+  border: none;
+  border-radius: 12px;
+  background-color: #ffffff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+}
+
+.projects-section .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.08);
+}
+
+.projects-section .card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1B4332;
+  margin-bottom: 1rem;
+}
+
+.projects-section .card-text {
+  font-size: 0.95rem;
+  color: #495057;
+  line-height: 1.6;
+}
+
+/* Card Buttons */
+.projects-section .card-footer .btn {
+  font-size: 0.85rem;
+  padding: 0.45rem 0.9rem;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.projects-section .btn-primary {
+  background-color: #2D6A4F;
+  border-color: #2D6A4F;
+}
+
+.projects-section .btn-primary:hover {
+  background-color: #40916C;
+  border-color: #40916C;
+}
+
+.projects-section .btn-outline-secondary {
+  color: #6c757d;
+  border-color: #d1e7dd;
+}
+
+.projects-section .btn-outline-secondary:hover {
+  background-color: #E9F5EC;
+  color: #2D6A4F;
+  border-color: #2D6A4F;
+}
+
+/* Disabled/in-progress buttons */
+.projects-section .btn:disabled,
+.projects-section .btn.disabled {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+/* Responsive title sizing */
+@media (max-width: 576px) {
+  .projects-section .card-title {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+/* ==========================
+   Experience Section Styles
+   ========================== */
+
+.experience-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.experience-section h2 {
+  color: #2D6A4F;
+  font-weight: 600;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+/* Cards */
+.experience-section .card {
+  background-color: #F0FDF4;
+  border-radius: 12px;
+  border: 1px solid #d8f3dc;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.experience-section .card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+}
+
+/* Card Headings */
+.experience-section .card h5 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: #2D6A4F;
+}
+
+/* Dates */
+.experience-section small.text-muted {
+  font-size: 0.85rem;
+  color: #6c757d;
+}
+
+/* Descriptions */
+.experience-section .card p {
+  font-size: 0.95rem;
+  color: #495057;
+  margin-top: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Responsive Stacking */
+@media (max-width: 768px) {
+  .experience-section .card {
+    margin-bottom: 20px;
+  }
+}
+
+
+
+/* Education Section */
+.education-section {
+  background-color: #F0FDF4;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.education-section h2 {
+  color: #2D6A4F;
+  font-weight: 600;
+}
+
+.education-section .timeline-item {
+  background-color: #ffffff;
+  border-left: 5px solid #2D6A4F;
+  border-radius: 12px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.education-section .timeline-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.07);
+}
+
+.education-section h5 {
+  color: #2D6A4F;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.education-section p {
+  color: #495057;
+  font-size: 0.95rem;
+}
+
+/* Involvement Section */
+.involvement-section {
+  background-color: #ffffff;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.involvement-section h2 {
+  color: #2D6A4F;
+  font-weight: 600;
+}
+
+.involvement-section .list-group-item {
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  color: #1B4332;
+  padding-left: 0;
+  transition: transform 0.3s ease;
+}
+
+.involvement-section .list-group-item:hover {
+  transform: translateX(6px);
+  color: #40916C;
+}
+
+/* Fade Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Contact Section */
+.contact-section {
+  background-color: #F0FDF4;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.contact-section h2 {
+  color: #2D6A4F;
+  font-weight: 600;
+}
+
+.contact-section p {
+  color: #495057;
+  font-size: 1rem;
+}
+
+/* Form Styling */
+.contact-section .form-control {
+  border: 1px solid #b7e4c7;
+  border-radius: 8px;
+  padding: 12px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-section .form-control:focus {
+  border-color: #40916C;
+  box-shadow: 0 0 0 0.2rem rgba(64, 145, 108, 0.25);
+}
+
+.contact-section label {
+  color: #2D6A4F;
+  font-weight: 500;
+}
+
+/* Submit Button */
+.contact-section .btn-primary {
+  background-color: #2D6A4F;
+  border-color: #2D6A4F;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.contact-section .btn-primary:hover {
+  background-color: #40916C;
+  transform: scale(1.05);
+}
+
+/* Email Text */
+.contact-section a[href^="mailto:"] {
+  color: #2D6A4F;
+  font-weight: 500;
+  text-decoration: underline;
+  transition: color 0.3s ease;
+}
+
+.contact-section a[href^="mailto:"]:hover {
+  color: #40916C;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
